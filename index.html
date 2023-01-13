@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/94c2659f09.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header"> 
@@ -38,13 +39,27 @@
                     <p>I'm Jashant Kumar. Currently I am pursuing my bachelors in electronics and communication engineering from National institute of technology Hamirpur. Regarding my technical skills, I have done two 
                         internships as an Software Developer.</p>
                     <div class="tab-title">
-                       <p class="tab-links active-link">Skills</p>
-                       <p class="tab-links">Experience</p>
-                       <p class="tab-links">Education</p>
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experinece')">Experience</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Ui/ux</span><br> desing we app</li>
+                            <li><span>Ui/ux</span><br> desing we app</li>
+                            <li><span>Ui/ux</span><br> desing we app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experinece">
+                        <ul>
+                            <li><span>Ui/ux</span><br> expi desing we app</li>
+                            <li><span>Ui/ux</span><br> desing we app</li>
+                            <li><span>Ui/ux</span><br> desing we app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ui/ux</span><br> edu desing we app</li>
                             <li><span>Ui/ux</span><br> desing we app</li>
                             <li><span>Ui/ux</span><br> desing we app</li>
                         </ul>
@@ -54,5 +69,53 @@
             </div>
         </div>
     </div> 
+    <!------Achievements-->
+    <div id ="Achievement">
+        <div class="container">
+            <h1 class="sub-title">Achievement</h1>
+            <div class="achievement-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>DSA problems</h2>
+                    <p>Solved 250+ problems on DSA on GFG</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>Electrothon 3.0</h2>
+                    <p>Winner of Elctrothon</p>
+                    <a href="">Know more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>DSA problems</h2>
+                    <p>Solved 250+ problems on DSA on GFG</p>
+                    <a href="">Learn More</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script >
+               var tablinks = document.getElementsByClassName("tab-links");
+               var tabcontents=document.getElementsByClassName("tab-contents");
+               function opentab(tabname)
+               {
+                for(tablink of tablinks)
+                {
+                        tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                        tabcontent.classList.remove("active-tab");
+                }
+                   event.currentTarget.classList.add("active-link");
+                   document.getElementById(tabname).classList.add("active-tab");
+
+               }
+
+    </script>
 </body>
 </html>
