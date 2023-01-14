@@ -23,6 +23,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 .logo {
     width: 140px;
@@ -317,4 +318,68 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+/*------------Css for small scale---------------------------*/
+nav .fas{
+    display:none;
+}
+@media only screen and (max-width: 600px)
+{
+    #header{
+        background-image: url(images/phonBg_1080x1920.jpg);
+    }
+    .header-Text{
+        margin-top: 160%;
+        font-size: 16px;
+    }
+    .header-Text h1{
+
+        font-size: 20px;
+    }
+    nav .fas{
+        display:block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        
+    }
+   nav ul .fas{
+    top: 10px;
+    position: absolute;
+    left: 120px;
+    color: #ff004f;
+   }
+   
+   .container h1{
+    font-size: 40px;
+    margin-left:auto;
+   }
+   h1{
+    font-size: 40px;
+   }
 }

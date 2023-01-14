@@ -12,18 +12,20 @@
     <div id="header"> 
          <div class="container">
               <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
-                <ul>
+                <i class="fa-solid fa-house"></i>
+                <ul id="sidemenu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
               </nav>
              <div class="header-Text">
                 <p>Software Developer</p>
-                <h1>I am <strong>Jashwant</strong>   kuamr <br> <strong>NIT </strong> Hamirpur</h1>
+                <h1>Hey there,👋<br> I'm <strong>  Jashwant</strong> Kumar</h1>
              </div> 
          </div>
     </div>  
@@ -161,6 +163,10 @@
 
             </div>
         </div>
+        
+    </div>
+    <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Copyright Jashwant Kumar</p>
     </div>
 </div>
 
@@ -183,6 +189,18 @@
 
                }
 
+    </script>
+    <script>
+        var menu = document.getElementById("sidemenu");
+        function openmenu()
+        {
+                 menu.style.right="0";
+           
+        }
+        function closemenu()
+        {
+            menu.style.right="-200px";
+        }
     </script>
 </body>
 </html>
