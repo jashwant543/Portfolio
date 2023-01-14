@@ -138,6 +138,11 @@ font-size: 60px;
 .tab-contents.active-tab{
     display: block;
 }
+.college{
+    color:#b54769;
+    text-decoration: none;
+  
+}
 /*------------Achievement--*/
 #Achievement{
     padding: 30px 0;
