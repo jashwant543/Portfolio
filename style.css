@@ -25,9 +25,16 @@ nav{
     flex-wrap: wrap;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 .logo {
     width: 140px;
 
+}
+.hamburger{
+    z-index: 1;
+    position: absolute;
 }
 nav ul li {
     display: inline-block;
