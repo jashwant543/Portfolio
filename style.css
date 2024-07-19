@@ -395,3 +395,50 @@ nav .fas{
     font-size: 40px;
    }
 }
+.coding-profiles {
+    margin-top: 20px;
+}
+
+.coding-profiles a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.coding-profiles a:hover {
+    color:  #fff;
+}
+.coding-profiles {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; /* Adjusts space between profile links */
+}
+
+.profile-link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    display: none;
+    font-size: 0.5em;
+    margin-top: 5px;
+}
+
+.profile-link:hover .label {
+    display: block;
+}
+
+.profile-link:hover i {
+    color:  #ff004f;
+}
