@@ -1,200 +1,414 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jashwant Kumar | Backend Software Engineer</title>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Jashwant Kumar</title>
+    <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/94c2659f09.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <div id="header"> 
-         <div class="container">
-              <nav>
-                <i class="fa-solid fa-house"></i>
-                <ul id="sidemenu">
-                    <li><a href="#header" >Home</a></li>
-                    <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#Achievement" onclick="closemenu()">Achievement</a></li>
-                    <li><a href="#Portfolio" onclick="closemenu()">Portfolio</a></li>
-                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-              </nav>
-             <div class="header-Text">
-                <p>Software Developer</p>
-                <h1>Hey there,👋<br> I'm <strong>  Jashwant</strong> Kumar</h1>
-                <div class="coding-profiles">
-                    <a href="https://leetcode.com/u/jashwantpdaj87/" target="_blank" class="profile-link">
-                        <div class="icon-text">
-                            <i class="fa-solid fa-code"></i>
-                            <span class="label">LeetCode</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/jashwant543" target="_blank" class="profile-link">
-                        <div class="icon-text">
-                            <i class="fab fa-github"></i>
-                            <span class="label">GitHub</span>
-                        </div>
-                    </a>
+<body class="dark-theme">
+    
+    <!-- Stripe-inspired Background Grid Glows -->
+    <div class="stripe-mesh">
+        <div class="mesh-glow mesh-glow-1"></div>
+        <div class="mesh-glow mesh-glow-2"></div>
+        <div class="mesh-glow mesh-glow-3"></div>
+    </div>
+
+    <!-- Apple-style Floating Nav -->
+    <header class="header-nav">
+        <nav class="container nav-container">
+            <div class="logo">
+                <a href="#hero">Jashwant<span>.</span></a>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#hero" onclick="closemenu()">Home</a></li>
+                <li><a href="#bento-overview" onclick="closemenu()">Overview</a></li>
+                <li><a href="#experience" onclick="closemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                <li><a href="#achievements" onclick="closemenu()">Achievements</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark menu-close-btn" onclick="closemenu()"></i>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon toggle-dark-icon"></i>
+                    <i class="fa-solid fa-sun toggle-light-icon"></i>
+                </button>
+                <i class="fa-solid fa-bars menu-open-btn" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Available for opportunities</div>
+                <h1 class="hero-title">
+                    Building high-performance <br>
+                    <span>backends</span> & <span>intelligent</span> systems.
+                </h1>
+                <p class="hero-subtitle">
+                    I am a Backend Software Engineer specializing in Java, Spring Boot, Microservices, and AI integrations. Previously built pipelines at Harman International and immersive UI platforms at AjnaLens.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">Explore Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-             </div> 
-         </div>
-    </div>  
-    <!------------About me-->
-    <div id="about">
+                <div class="hero-socials">
+                    <a href="https://github.com/jashwant543" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i> <span>GitHub</span></a>
+                    <a href="https://leetcode.com/u/jashwantpdaj87/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i> <span>LeetCode</span></a>
+                    <a href="https://www.linkedin.com/in/jashwantkumar543/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Bar -->
+    <section class="metrics-bar">
+        <div class="container metrics-grid">
+            <div class="metric-item">
+                <span class="metric-number">60%+</span>
+                <span class="metric-label">Pipeline Throughput Increase</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-number">4x</span>
+                <span class="metric-label">Faster Report Generation</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-number">250+</span>
+                <span class="metric-label">DSA Problems Solved</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-number">NIT</span>
+                <span class="metric-label">Hamirpur Alumnus (ECE)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Overview Grid (Core Info) -->
+    <section id="bento-overview" class="section bento-section">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/sam2.jpeg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm Jashant Kumar. Currently I am pursuing my bachelor in electronics and communication engineering from  <a href="https://nith.ac.in/"  class="college"><em>  National Institute of Technology Hamirpur.</em> </a>
-                        I am a highly motivated software developer with a passion for coding and problem-solving. 
-                        I am excited to apply my skills and knowledge to real-world projects and be a part of a dynamic development team. 
-                        I am a quick learner, adaptable, and always looking for ways to improve my skills and stay up to date with the latest technologies. 
-                        I am excited to take on new challenges and grow as a developer.</p>
-                    <div class="tab-title">
-                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                       <p class="tab-links" onclick="opentab('experinece')">Experience</p>
-                       <p class="tab-links" onclick="opentab('education')">Education</p>
+            <h2 class="sub-title">Overview</h2>
+            <div class="bento-grid">
+                
+                <!-- Bento Block 1: Featured Project (BuildifyAI) -->
+                <div class="bento-card featured-project-card">
+                    <div class="bento-header">
+                        <span class="tag">Featured Project</span>
+                        <h3>BuildifyAI</h3>
+                        <p class="project-desc-short">An AI-powered web-application codebase generator built with Spring Boot, Spring AI, WebSockets, and Stripe lifecycle integration.</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming</span><br>C, C++, C#, JavaScript, HTML, CSS</li>
-                            <li><span>Tools</span><br>Unity 3d, Blender, VS Code, Git</li>
-                            <li><span>Databases</span><br>SQL, MongoDB </li>
-                        </ul>
+                    <div class="bento-project-preview">
+                        <!-- Code Terminal View -->
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="title">BuildifyAIStreamService.java</span>
+                            </div>
+                            <pre class="terminal-body"><code><span class="keyword">public</span> Flux&lt;ChatEvent&gt; <span class="method">streamCodeGeneration</span>(String prompt) {
+    <span class="keyword">return</span> <span class="keyword">this</span>.chatClient.prompt()
+        .user(prompt)
+        .stream()
+        .map(event -> parseTokens(event))
+        .publishOn(Schedulers.boundedElastic());
+}</code></pre>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experinece">
-                        <ul>
-                            <li><span>AjnaLens (Unity Developer Intern)</span><br> <br> ▪ Worked on the main UI of Ajnasuite apk. <br> <br>
-                                ▪ Developed the teleportation feature in their application. <br> <br>
-                                ▪ Worked on Realtime object instantiating from Firebase to environment</li>
-                            <li><span>AiBorne Tech (AR Developer Intern)</span><br> <br> ▪ Developed a Mixed Reality application for chemistry titration experiment. <br> <br>
-                                ▪ Worked on Unity3D, Google AR Core and Firebase.
-                            
-                            
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Graduation</span><br>Pursuing B.Tech. in Electronics and Communication Engineering, CGPI - 8.51</li>
-                            <li><span>Higher Secondary school</span><br>Major-Physics, Chemistry, Mathematics, Percentage - 86.21%</li>
-                            <li><span>Secondary school</span><br> CGPA - 9.2</li>
-                        </ul>
+                    <div class="bento-footer">
+                        <div class="tech-tags-row">
+                            <span>Spring Boot</span>
+                            <span>Spring AI</span>
+                            <span>Reactor Flux</span>
+                            <span>pgvector</span>
+                            <span>Stripe</span>
+                        </div>
+                        <a href="https://github.com/jashwant543/ARedu" target="_blank" class="learn-more">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
+                <!-- Bento Block 2: Technical Skills Grid -->
+                <div class="bento-card skills-card">
+                    <div class="bento-header">
+                        <span class="tag">Expertise</span>
+                        <h3>Core Tech Stack</h3>
+                    </div>
+                    <div class="skills-category-list">
+                        <div class="category-block">
+                            <h4>Backend Frameworks</h4>
+                            <div class="skill-tags">
+                                <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>REST APIs</span><span>Microservices</span><span>JWT</span><span>RBAC</span>
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h4>Databases & ORM</h4>
+                            <div class="skill-tags">
+                                <span>PostgreSQL</span><span>SQL</span><span>Hibernate</span><span>JPA</span><span>JPQL</span><span>Query Optimization</span>
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h4>DevOps & Tools</h4>
+                            <div class="skill-tags">
+                                <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>CI/CD</span><span>MinIO</span><span>Git</span><span>Maven</span>
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h4>AI & REST Tools</h4>
+                            <div class="skill-tags">
+                                <span>Spring AI</span><span>OpenAI API</span><span>RAG</span><span>SSE</span><span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Block 3: Education Quick Card -->
+                <div class="bento-card education-card">
+                    <div class="bento-header">
+                        <span class="tag">Background</span>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="edu-body">
+                        <i class="fa-solid fa-graduation-cap edu-icon"></i>
+                        <h4>NIT Hamirpur</h4>
+                        <p class="degree">B.Tech in Electronics & Communication Engineering</p>
+                        <div class="gpa-badge">CGPA: 8.33</div>
+                    </div>
+                </div>
+
+                <!-- Bento Block 4: Quick Bio -->
+                <div class="bento-card bio-card">
+                    <div class="bento-header">
+                        <span class="tag">Developer Profile</span>
+                        <h3>About Me</h3>
+                    </div>
+                    <p class="bio-text">
+                        I specialize in creating robust, scalable, and secure backend architectures. With hands-on experience in high-volume enterprise pipelines and modern cloud-native systems, I merge software engineering principles with AI-driven models to build responsive products.
+                    </p>
+                </div>
             </div>
         </div>
-    </div> 
-    <!---------------------------------------Achievements-------------------------------------------------------------->
-    <div id ="Achievement">
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section timeline-section">
         <div class="container">
-            <h1 class="sub-title">Achievement</h1>
-            <div class="achievement-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>DSA problems</h2>
-                    <p>Solved 250+ data structures and algorithms problems.</p>
-                    <a href="https://auth.geeksforgeeks.org/user/jashwant_kumar4341/practice">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-trophy"></i>
-                    <h2>Electrothon 3.0</h2>
-                    <p>Secured First position in Electrothon 3.0 (National level Hackathon conducted by NITH)</p>
-                    <a href="images/Hackathon (1).png">Know more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-trophy"></i>
-                    <h2>Electrothon 4.0</h2>
-                    <p>Secured First position in Electrothon 4.0 under Open Innovation category (International level Hackathon conducted by NITH).</p>
-                    <a href="images/Hackathon (2).pdf">Learn More</a>
+            <h2 class="sub-title">Professional Experience</h2>
+            <div class="experience-list">
+                
+                <!-- Job 1: Harman -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="company-logo">H</div>
+                        <div class="exp-title-meta">
+                            <h3>Engineer 1</h3>
+                            <span class="company-name">Harman International</span>
+                        </div>
+                        <span class="exp-date">Jul 2023 – Present</span>
+                    </div>
+                    <div class="exp-body">
+                        <ul class="exp-points">
+                            <li>Designed, developed, and deployed a high-performance multithreaded Java data processing pipeline leveraging Core Java concurrency (<strong>ExecutorService</strong>) to transform large-scale CSV datasets into structured JSON payloads for RESTful API ingestion, improving throughput by <strong>60%+</strong>.</li>
+                            <li>Architected and implemented a Java-based computational plugin for recycled parts analysis, optimizing business rule execution, reducing calculation errors by <strong>15%</strong>, and improving processing performance by <strong>25%</strong>.</li>
+                            <li>Built and deployed a scalable Spring Boot microservice using ExecutorService-based multithreading and <strong>Apache POI</strong> to process complex hierarchical BOM (Bill of Materials) datasets, achieving <strong>4× faster</strong> report generation.</li>
+                            <li>Designed and developed Spring Boot REST APIs for dynamic business report generation with hierarchical filtering, multi-level indentation, and conditional formatting in Excel, increasing reporting efficiency by <strong>40%</strong>.</li>
+                            <li>Engineered secure and scalable Spring Boot REST APIs for enterprise systems integration, ensuring seamless synchronization, data exchange, and interoperability between distributed systems.</li>
+                            <li>Led end-to-end data migration from legacy systems by implementing Python-based transformation pipelines and REST endpoints, ensuring high availability and minimal downtime.</li>
+                        </ul>
+                    </div>
                 </div>
 
-
-
-            </div>
-        </div>
-    </div>
-
- <!---------------------------------------My works-------------------------------------------------------------->
-   
- <div id="Portfolio">
-    <div class ="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="workList">
-            <div class="work">
-                <img src="images/Ar_Education.jpg" alt="">
-                <div class="layer">
-                    <h3>AR Education</h3>
-                    <p>Help students to comprehend mathematical and core electronic concepts by 3D visualization. <br> Tools: Unity 3d, Blender, AR Core Skills</p>
-                    <a href="https://github.com/jashwant543/ARedu" class="effect"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/NITH_VR.jpg" alt="">
-                <div class="layer">
-                    <h3>NITH VR</h3>
-                    <p>The NIT Hamirpur VR project is an one of its kind simulation of NITH campus with a simple user interface. The simulation incorporates the whole NITH campus, not just a single part or building.</p>
-                    <a href="https://github.com/jashwant543/NithVR" class="effect"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Circuit_simulator.png" alt="">
-                <div class="layer">
-                    <h3>Circuit Simulator</h3>
-                    <p>We are creating an interactive system for the user to get in touch with other users while performing experiments virtually. We are creating a 3D alternative that will give the user the real experience with virtual models.</p>
-                    <a href="https://github.com/jashwant543/ARCircuitSimulator" class="effect"><i class="fa-solid fa-link"></i></a>
+                <!-- Job 2: AjnaLens -->
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="company-logo">A</div>
+                        <div class="exp-title-meta">
+                            <h3>Unity Developer Intern</h3>
+                            <span class="company-name">AjnaLens</span>
+                        </div>
+                        <span class="exp-date">Sep 2020 – Oct 2020</span>
+                    </div>
+                    <div class="exp-body">
+                        <ul class="exp-points">
+                            <li>Improved the user interface (UI) of the <strong>Ajnasuite APK</strong>, resulting in a <strong>15% reduction</strong> in UI-related bugs and a <strong>10% increase</strong> in user engagement.</li>
+                            <li>Designed and implemented a modular player teleportation feature inside the immersive environment.</li>
+                            <li>Developed a system where 3D virtual objects are dynamically spawned in real-time based on data synchronized with <strong>Firebase</strong>.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <a href="https://github.com/jashwant543?tab=repositories"><button class="btn">See more</button></a>
- </div>
+    </section>
 
-<!------------------Contact----------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1  class="sub-title">Contact Me</h1>
-                <p><i class="fa-regular fa-paper-plane"></i></p>
-                <p><i class="fa-sharp fa-solid fa-phone-volume"></i></p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/jashwantkumar543/"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/jashwant543"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jashwantpdaj87@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-
+    <!-- Projects Grid Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: BuildifyAI -->
+                <div class="project-card-v2">
+                    <div class="project-header-v2">
+                        <div class="project-icon-box"><i class="fa-solid fa-robot"></i></div>
+                        <div class="project-titles">
+                            <h3>BuildifyAI</h3>
+                            <span class="project-timeline">Jan 2026 - Present</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        AI-powered code generation platform backend. Features stateless JWT auth (JJWT, Spring Security), project-level RBAC access controls, reactive streaming endpoints via Spring AI and SSE, MinIO integration for artifact persistence, and Stripe subscription lifecycle management.
+                    </p>
+                    <div class="project-tech-badges">
+                        <span>Java</span><span>Spring Boot</span><span>Reactor Flux</span><span>Stripe</span><span>Docker</span>
+                    </div>
+                    <a href="https://github.com/jashwant543/ARedu" class="project-card-link">View Project Repository <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <a href="images/Jashwant_Kumar.pdf" class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form action="https://formsubmit.co/jashwantpdaj87@gmail.com" method="POST">
-                    <input type="text" name="Name" placeholder="Your Name" required >
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <a href="./index.html"><button type="submit" class="btn btn2" >Submit</button></a>
-                </form>
-            
 
+                <!-- Project 2: AR Education -->
+                <div class="project-card-v2">
+                    <div class="project-header-v2">
+                        <div class="project-icon-box"><i class="fa-solid fa-vr-cardboard"></i></div>
+                        <div class="project-titles">
+                            <h3>AR Education</h3>
+                            <span class="project-timeline">AR/VR Systems</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An augmented reality visualization platform designed to help students comprehend mathematical equations and complex electronic concepts in real-time, built with modular structures.
+                    </p>
+                    <div class="project-tech-badges">
+                        <span>Unity 3D</span><span>Blender</span><span>Google AR Core</span>
+                    </div>
+                    <a href="https://github.com/jashwant543/ARedu" class="project-card-link">View Project Repository <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3: NITH VR -->
+                <div class="project-card-v2">
+                    <div class="project-header-v2">
+                        <div class="project-icon-box"><i class="fa-solid fa-gamepad"></i></div>
+                        <div class="project-titles">
+                            <h3>NITH VR Simulation</h3>
+                            <span class="project-timeline">Campus Simulation</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A virtual reality simulation modeled to render the National Institute of Technology Hamirpur campus in high fidelity, incorporating interactive UI components for navigation.
+                    </p>
+                    <div class="project-tech-badges">
+                        <span>Unity 3D</span><span>Blender</span><span>VR SDK</span>
+                    </div>
+                    <a href="https://github.com/jashwant543/NithVR" class="project-card-link">View Project Repository <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 4: Circuit Simulator -->
+                <div class="project-card-v2">
+                    <div class="project-header-v2">
+                        <div class="project-icon-box"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="project-titles">
+                            <h3>AR Circuit Simulator</h3>
+                            <span class="project-timeline">Collaborative MR</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An interactive MR workbench allowing students to collaborate in a virtual laboratory. Users can drop circuit components, wire terminals, and simulate live current flows.
+                    </p>
+                    <div class="project-tech-badges">
+                        <span>Unity 3D</span><span>Firebase</span><span>AR Core</span>
+                    </div>
+                    <a href="https://github.com/jashwant543/ARCircuitSimulator" class="project-card-link">View Project Repository <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-        
-    </div>
-    <div class="copyright">
-            <p><i class="fa-regular fa-copyright"></i> Copyright Jashwant Kumar</p>
-    </div>
-</div>
+    </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <h2 class="sub-title">Achievements</h2>
+            <div class="achievements-row">
+                
+                <div class="achievement-item-v2">
+                    <div class="ach-badge"><i class="fa-solid fa-award"></i></div>
+                    <div class="ach-content">
+                        <h3>First Position - Electrothon 4.0</h3>
+                        <p>Secured 1st Place at Electrothon 4.0 in Open Innovation Category (International level Hackathon hosted by NIT Hamirpur).</p>
+                        <a href="images/Hackathon (2).pdf" target="_blank" class="ach-link">View Hackathon Certificate <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
 
+                <div class="achievement-item-v2">
+                    <div class="ach-badge"><i class="fa-solid fa-award"></i></div>
+                    <div class="ach-content">
+                        <h3>First Position - Electrothon 3.0</h3>
+                        <p>Secured 1st Place at Electrothon 3.0 (National level Hackathon hosted by NIT Hamirpur).</p>
+                        <a href="images/Hackathon (1).png" target="_blank" class="ach-link">View Hackathon Certificate <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="achievement-item-v2">
+                    <div class="ach-badge"><i class="fa-solid fa-keyboard"></i></div>
+                    <div class="ach-content">
+                        <h3>250+ DSA Problems</h3>
+                        <p>Solved a wide array of algorithmic problems (Strings, Trees, Dynamic Programming, Graphs) on GeeksforGeeks.</p>
+                        <a href="https://auth.geeksforgeeks.org/user/jashwant_kumar4341/practice" target="_blank" class="ach-link">Practice Profile <i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="row contact-row">
+                <div class="contact-details">
+                    <h2 class="sub-title">Get In Touch</h2>
+                    <p class="contact-pitch">
+                        I am open to discuss interesting system design, backend development roles, and project collaborations. Feel free to reach out via the form, or drop me a line directly.
+                    </p>
+                    <div class="contact-links-list">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jashwantpdaj87@gmail.com" class="contact-pill">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>jashwantpdaj87@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="cv-download-box">
+                        <a href="images/Jashwant_Kumar.pdf" target="_blank" class="btn btn-primary cv-btn">
+                            Download Resume / CV <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <form action="https://formsubmit.co/jashwantpdaj87@gmail.com" method="POST" class="contact-form-v2">
+                        <div class="input-row">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Jashwant Kumar. Designed with Apple + Stripe style values. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
     <script src="index.js"></script>
 </body>
 </html>
